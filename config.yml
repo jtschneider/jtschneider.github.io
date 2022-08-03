@@ -1,6 +1,6 @@
 baseURL: https://jtschneider.github.io/
 languageCode: en-uk
-title: My home page | Jan Thorben Schneider
+title: Home page
 paginate: 5
 theme: PaperModX
 
@@ -20,10 +20,10 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperModX]
-    author: Me
+    title: Home page | Jan Thorben Schneider
+    description: "This is the personal home page of Jan Thorben Schneider"
+    keywords: [Blog, Portfolio, home page]
+    author: Jan Thorben Schneider
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "2 January 2006"
@@ -34,26 +34,33 @@ params:
     ShowShareButtons: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
-    ShowCodeCopyButtons: false
+    ShowCodeCopyButtons: true
     disableSpecial1stPost: false
-    disableScrollToTop: false
+    disableScrollToTop: true
     comments: false
     hidemeta: false
     hideSummary: false
-    showtoc: false
-    tocopen: false
+    showtoc: true
+    tocopen: true
+    tocside: 'left'
 
     assets:
         # disableFingerprinting: true
-        favicon: "<link / abs url>"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "<link / abs url>"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
+        favicon: /favicons/favicon.ico
+        favicon16x16: /favicons/favicon-16x16.png
+        favicon32x32: /favicons/favicon-32x32.png
+        favicon48x48: /favicons/favicon-48x48.png
+        apple_touch_icon: /favicons/apple-touch-icon.png
+        safari_pinned_tab: /favicons/favicon.svg
+        favicon_svg: /favicons/favicon.svg
+
+
+
+
 
     label:
         text: "Home"
-        icon: /apple-touch-icon.png
+        icon: /favicons/apple-touch-icon.png
         iconHeight: 35
 
     # profile-mode
@@ -64,7 +71,7 @@ params:
         imageUrl: images/portrait.jpg
         imageWidth: 150
         imageHeight: 150
-        imageTitle: my image
+        imageTitle: my portrait
         buttons:
             - name: LRXXZ ES rescaling
               url: es-rescaling.html
@@ -120,18 +127,20 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
+        # - identifier: categories
+        #   name: categories
+        #   url: /categories/
+        #   weight: 10
+        # - identifier: tags
+        #   name: tags
+        #   url: /tags/
+        #   weight: 20
         - identifier: CPHT
-          name: CPHT profile
+          name: "CPHT profile"
           url: https://www.cpht.polytechnique.fr/?q=en/node/554
           weight: 30
+          params:
+            external: true
 # Read: https://github.com/reorx/hugo-PaperModX/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
