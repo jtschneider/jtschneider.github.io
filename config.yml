@@ -1,4 +1,4 @@
-baseURL: https://jtschneider.github.io/
+baseURL: https://www.jschneider.eu/
 languageCode: en-uk
 title: Home page
 paginate: 5
@@ -136,8 +136,8 @@ menu:
         #   url: /tags/
         #   weight: 20
         - identifier: CPHT
-          name: "CPHT profile"
-          url: https://www.cpht.polytechnique.fr/?q=en/node/554
+          name: "Quinfog website"
+          url: https://quinfog.hbar.es/
           weight: 30
           params:
             external: true
